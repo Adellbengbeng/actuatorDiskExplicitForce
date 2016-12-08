@@ -1,0 +1,9 @@
+#!/bin/sh -u
+cd ${0%/*} || exit 1    # run from this directory
+set -x
+
+rm -fr ${FOAM_USER_LIBBIN}/actuatorDiskExplicitForceSimpleFoam
+
+./solver/Allwclean
+
+# ----------------------------------------------------------------- end-of-file
